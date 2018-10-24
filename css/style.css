@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 20px;
+  /*background: #EDEDED;*/
+}
+
+html{
+  font-size: 36px;
+
+}
+
+
+#flexContainer {
+  /* Specifies that the contents will be laid out according to Flexbox rules. */
+  display: flex;
+}
+
+header {
+  /*background: #707070;*/
+  min-height: 100px;
+  margin: 3px;
+  padding: 3px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: maroon;
+
+}
+
+nav {
+  /*background: #C9BFBF;*/
+  /* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
+  flex: 1 1 15%;
+  width: 100%;
+  margin: 3px;
+  padding: 3px;
+}
+
+aside {
+  /*background: #C9C9C9;*/
+  /* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
+  flex: 1 1 15%;
+  min-width: 150px;
+  padding: 3px;
+  margin: 3px;
+}
+
+#content {
+  min-height: 800px;
+  /*background: #ABABAB;*/
+  /* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
+  flex: 2 1 70%;
+  margin: 3px;
+  padding: 3px;
+  position: relative;
+}
+
+#content h1 {
+  font-size: 1rem;
+
+
+
+}
+
+footer {
+  /*background: #707070;*/
+  min-height: 50px;
+  margin: 3px;
+  padding: 3px;
+}
+footer p {
+  color: maroon;
+  text-align: center;
+  font-size: 20px;
+  background-color: tomato;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+
+/* When the page is resized, use the styles below */
+
+@media all and (max-width: 640px) {
+  #flexContainer {
+    /* Shorthand property specifying flex-direction and flex-wrap */
+    flex-flow: column wrap;
+  }
+  header {
+    min-height: 75px;
+  }
+  nav {
+    min-height: 50px;
+    /* Specifying the order so the nav appears as the first item in the flex container */
+    order: 1;
+  }
+  aside {
+    min-height: 50px;
+    /* Specifying the order so the nav appears as the second item in the flex container */
+    order: 2;
+  }
+  #content {
+    /* Specifying the order so the nav appears as the third item in the flex container */
+    min-height: 725px;
+    order: 3;
+  }
+  footer {
+    min-height: 25px;
+  }
+}
+
+#gallery p {
+  position: relative;
+}

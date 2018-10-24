@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  text-align: center;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+    "antet antet antet"
+    "bara1 continut bara2"
+    "subsol subsol subsol"
+}
+
+.container > * {
+  padding: 20px;
+}
+
+.header { background-color: dodgerblue; grid-area: antet; }
+.aside1 { background-color: orange; grid-area: bara1; }
+.main { background-color: greenyellow; grid-area: continut; text-align:left;}
+.aside2 { background-color: hotpink; grid-area: bara2; }
+.footer { background-color: coral; grid-area: subsol; }

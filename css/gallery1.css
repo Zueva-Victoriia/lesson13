@@ -1,0 +1,52 @@
+
+		html, body {
+			margin: 0;   /*сброс программистских решений*/
+			padding: 0;
+
+		}
+
+		#gallery {
+			max-width: 860px; /*responible*/
+			margin: 0 auto;
+            text-align: center;
+
+		}
+
+		#gallery .photos img, p {
+			width: 100%;
+			display: none;
+			
+
+		}
+		#gallery .photos img:first-child {
+			display: block;
+
+
+
+		}
+		.photos {
+
+			position: relative;
+
+		}
+		.photos p{
+			position: absolute;
+			top: 5%;
+			left: 10%;
+			border: 2px solid white;
+			padding: 6px;
+/*			display: block;
+*/			
+
+
+
+		}
+
+		#gallery .photos p:first-child {
+			display: block;
+
+
+
+		}
+
+
